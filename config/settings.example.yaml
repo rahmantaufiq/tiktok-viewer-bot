@@ -1,0 +1,22 @@
+# tiktok-viewer-bot example config
+runtime:
+  headless: true
+  concurrency: 4
+  target_url: "https://www.tiktok.com/@example/video/0000000000000000000"
+  watch_seconds: 18
+  dry_run: true
+
+proxy:
+  enabled: false
+  pool_file: "config/proxies.txt"
+  rotate_every: 3
+
+fingerprint:
+  user_agents_file: "config/user_agents.txt"
+  viewport_randomize: true
+  locale_pool: ["en-US", "en-GB", "en-CA"]
+
+output:
+  log_dir: "logs"
+  state_file: "viewer_state.json"
+  report_format: "json"
