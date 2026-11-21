@@ -1,0 +1,1 @@
+"""Infrastructure adapters (browser, storage, reporting)."""
