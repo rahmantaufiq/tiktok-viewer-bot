@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <rect width="256" height="256" rx="48" fill="#0B0B12"/>
+  
+  <!-- Eye outline: outer almond shape, slightly off-center and tilted -->
+  <path d="M 28 128 Q 78 54 148 66 Q 210 76 228 128 Q 210 180 148 190 Q 78 202 28 128 Z" 
+        fill="none" stroke="#E8E6F0" stroke-width="4" stroke-linejoin="round"/>
+  
+  <!-- Iris ring -->
+  <circle cx="138" cy="128" r="44" fill="none" stroke="#E8E6F0" stroke-width="3"/>
+  
+  <!-- Play triangle inside iris (pointing right, glowing focal) -->
+  <polygon points="120,104 120,152 162,128" fill="#FF2E63"/>
+  
+  <!-- Inner triangle ring (faint echo) -->
+  <polygon points="126,112 126,144 154,128" fill="none" stroke="#25F4EE" stroke-width="2"/>
+  
+  <!-- Orbiting rings (three elliptical orbits around the iris) -->
+  <!-- Orbit 1: tilted -30deg -->
+  <ellipse cx="138" cy="128" rx="56" ry="20" fill="none" stroke="#25F4EE" stroke-width="2" 
+           transform="rotate(-30 138 128)" opacity="0.9"/>
+  
+  <!-- Orbit 2: tilted 60deg -->
+  <ellipse cx="138" cy="128" rx="52" ry="18" fill="none" stroke="#FF2E63" stroke-width="2" 
+           transform="rotate(60 138 128)" opacity="0.85"/>
+  
+  <!-- Orbit 3: tilted 105deg -->
+  <ellipse cx="138" cy="128" rx="48" ry="16" fill="none" stroke="#25F4EE" stroke-width="2" 
+           transform="rotate(105 138 128)" opacity="0.7"/>
+  
+  <!-- Orbit nodes: small glowing dots at ellipse intersections -->
+  <circle cx="178" cy="100" r="4" fill="#25F4EE"/>
+  <circle cx="100" cy="156" r="4" fill="#FF2E63"/>
+  <circle cx="150" cy="176" r="3.5" fill="#E8E6F0"/>
+  <circle cx="166" cy="86" r="3" fill="#25F4EE"/>
+  
+  <!-- Glow focal point: small bright dot at play tip -->
+  <circle cx="158" cy="128" r="3" fill="#E8E6F0"/>
+  
+  <!-- Sparse eyelash strokes top -->
+  <path d="M 60 84 L 54 70" stroke="#E8E6F0" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M 92 70 L 90 54" stroke="#E8E6F0" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M 128 64 L 130 48" stroke="#E8E6F0" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M 164 68 L 170 54" stroke="#E8E6F0" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M 196 82 L 204 70" stroke="#E8E6F0" stroke-width="2.5" stroke-linecap="round"/>
+  
+  <!-- Bottom lashes, shorter -->
+  <path d="M 74 174 L 68 186" stroke="#E8E6F0" stroke-width="2" stroke-linecap="round"/>
+  <path d="M 114 192 L 112 204" stroke="#E8E6F0" stroke-width="2" stroke-linecap="round"/>
+  <path d="M 160 190 L 164 202" stroke="#E8E6F0" stroke-width="2" stroke-linecap="round"/>
+  
+  <!-- Small wordmark, tucked bottom-left -->
+  <text x="40" y="232" font-family="monospace" font-size="9" fill="#E8E6F0" letter-spacing="2" opacity="0.5">TIKTOK-VIEWER-BOT</text>
+</svg>
